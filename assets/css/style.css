@@ -8,20 +8,20 @@
 }
 
 html {
-    scroll-padding-top: 68px;
+    scroll-padding-top: 48px;
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
 
 /* header */
 .header {
-    height: 70px;
+    height: 50px;
     /* background: #97212D; */
     background: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 10px 20px;
     width: 100%;
     z-index: 9999;
     top: 0;
@@ -30,8 +30,19 @@ html {
     position: fixed;
 }
 
+.header .logo {
+    display: flex;
+}
+
 .header .logo img {
-    height: 55px;
+    height: 50px;
+}
+
+.header .logo p {
+    text-transform: uppercase;
+    color: white;
+    line-height: 50px;
+    padding-left: 5px;
 }
 
 .header .navbar a {
@@ -106,11 +117,11 @@ html {
 
 /* slider */
 .owl-carousel.owl-loaded.owl-drag {
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 .owl-carousel .item img {
-    height: 600px;
+    height: 550px;
     width: 100%;
 }
 /* author */
@@ -264,7 +275,7 @@ h3.header-creative {
 }
 
 .storyline .box-container .box .year {
-    font-size: 2rem;
+    font-size: 29px;
     color: #eee;
     position: relative;
 }
@@ -284,6 +295,7 @@ h3.header-creative {
     font-size: 20px;
     color: #fff;
     padding-top: 10px;
+    font-weight: 400;
 }
 
 .storyline .box-container .box li p {
@@ -299,9 +311,8 @@ h3.header-creative {
     top: 0;
     left: 0;
     right: 0;
-    /* background: linear-gradient(45deg, black, white); */
     color: rgb(228, 213, 213);
-    font-size: 40px;
+    font-size: 30px;
     padding: 5px 10px;
     border-top: 1px solid;
     text-align: center;
@@ -469,6 +480,39 @@ h3.header-creative {
     to {
         transform: translateY(0);
     }
+}
+
+/* footer */
+
+.footer {
+    height: 80px;
+    background: #231f1f;
+    position: relative;
+}
+
+.footer .share {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    transition: .2s linear;
+}
+
+.footer .share a {
+    background: rgba(255,255,255, .2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+    padding: 10px 20px;
+    margin: 10px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.footer .share a:hover {
+    background: rgba(255,255,255, .5);
+    color: #555;
 }
 
 
