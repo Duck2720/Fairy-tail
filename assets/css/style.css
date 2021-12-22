@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Raleway:wght@100;300;400;500;600&family=Roboto:wght@100;300;400;500;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    font-family:'Roboto', sans-serif;
     text-transform: capitalize;
 }
 
@@ -124,6 +126,11 @@ html {
     height: 550px;
     width: 100%;
 }
+
+.owl-carousel .item {
+    margin-left: -1px !important;
+}
+
 /* author */
 #author {
     margin-bottom: 20px;
@@ -178,6 +185,7 @@ html {
 
 #author .author-meager .author-about p {
     line-height: 22px;
+    text-transform: none;
 }
 
 #author .author-meager .author-about ul li p a {
@@ -196,6 +204,7 @@ html {
 
 #author .author-detail div p {
     padding: 0 20px;
+    text-transform: none;
 }
 
 #author .author-detail .story h3 {
@@ -203,6 +212,7 @@ html {
     font-size: 20px;
     margin-top: -5px;
     text-align: center;
+    font-weight: 400;
 }
 
 .author-detail .creativeCareer .creativeCareer-item {
@@ -302,6 +312,8 @@ h3.header-creative {
     color: #fff;
     line-height: 1.4;
     text-align: justify;
+    text-transform: none;
+    margin-top: -10px;
 }
 
 /* maincharacter */
@@ -420,10 +432,15 @@ h3.header-creative {
     font-weight: 500;
 }
 
+.modal-detail div.power {
+    /* text-transform: none; */
+}
+
 .modal-detail div.description {
     font-style: italic;
     opacity: 0.7;
     padding-top: 20px;
+    text-transform: none;
 }
 
 .modal .modal-detail .info-bar {
@@ -546,7 +563,7 @@ h3.header-creative {
 @media (max-width:991px) {
 
     #author {
-        margin-top: 70px;
+        margin-top: 50px;
     }
 
     .storyline .box-container .box {
